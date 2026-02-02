@@ -7,7 +7,7 @@
 set -e
 
 # Derive workspace name from current directory or Conductor env var
-rm ../setup_start
-sleep 5
+echo "starting teardown etc..."
+sleep 7
 echo "DELETED"
-rm ../setup_end
+sleep 2
