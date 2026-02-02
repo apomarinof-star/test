@@ -8,6 +8,6 @@ set -e
 
 # Derive workspace name from current directory or Conductor env var
 echo "starting teardown etc..."
-sleep 7
+sleep 4
 echo "DELETED"
-sleep 2
+sleep 1
