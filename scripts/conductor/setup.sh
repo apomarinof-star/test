@@ -8,7 +8,7 @@ set -e
 
 # Derive workspace name from current directory or Conductor env var
 echo "starting setup etc..."
-exit 1
+cat asd
 sleep 4
 echo "CREATED"
 sleep 1
