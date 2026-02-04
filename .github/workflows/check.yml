@@ -1,0 +1,28 @@
+name: Check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      should_fail:
+        description: 'Set to true to make the check fail'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run check
+        env:
+          SHOULD_FAIL: ${{ inputs.should_fail }}
+        run: |
+          echo "starting check"
+          sleep 5
+          echo "done"
+          if [ "$SHOULD_FAIL" = "true" ]; then
+            echo "Error: Check failed as requested"
+            exit 1
+          fi
