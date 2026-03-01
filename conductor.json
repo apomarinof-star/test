@@ -4,5 +4,5 @@
     "run": "scripts/conductor/run.sh",
     "archive": "scripts/conductor/archive.sh"
   },
-  "runScriptMode": "concurrent"
+  "runScriptMode": "sequential"
 }
